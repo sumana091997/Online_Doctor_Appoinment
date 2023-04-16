@@ -1,0 +1,48 @@
+.form-control {
+    border-radius: 25px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.pat-head .frm-pat {
+    display: block;
+}
+
+.pat-head .doc-head {
+    line-height: 1.5;
+}
+
+.btn_pat {
+    background-color: #09dca4;
+    color: white;
+}
+
+.doc-head {
+    display: none;
+}
+
+.frm-doc {
+    display: none;
+}
+
+.slide-control {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+.slide-control .slide {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 25px;
+}

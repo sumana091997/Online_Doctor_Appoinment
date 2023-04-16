@@ -1,0 +1,49 @@
+/***************************************************Search Page*****************************************************/
+
+
+/* .shedulebtn {
+    border-width: 1px;
+    border-color: #28328c;
+    font-size: 1.1rem;
+} */
+
+.doc-speciality {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+.doc-info {
+    color: #20c0f3;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.doc-details {
+    color: #757575;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.doc-location {
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.doc-location a {
+    color: #09e5ab;
+    font-weight: 500;
+}
+
+.show-list {
+    padding: 30px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-top: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}

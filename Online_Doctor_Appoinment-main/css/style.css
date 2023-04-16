@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'STIX Two Math', serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url('../image/doctor-background.jpg'); */
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url('../image/doctor-wallpaper-hd.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 50%, 50% 70%, 0 50%, 0 0);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: white;
+}
+
+ul li a {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    font-size: 1.1rem;
+    color: black;
+    text-transform: uppercase;
+    padding: 4px 0;
+    transition: 0.5s;
+}
+
+ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #28328c;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+ul li a:hover {
+    color: #28328c;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.logbtn {
+    border-width: 1px;
+    border-color: #28328c;
+    font-size: 1.1rem;
+}
+
+.logbtn:hover {
+    background-color: #28328c;
+    color: white;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-search {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+    border: 1px solid #28328c;
+    border-radius: 100px;
+    margin: 12px;
+    padding: 12px 35px;
+    color: #28328c;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header-buttons a:hover {
+    background: #28328c;
+    color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+}
+
+
+/**********************End Header*******************************/
+
+
+/**********************Search bar*******************************/
+
+.sub-btn {
+    background-color: #14bef0;
+    color: white;
+}
+
+
+/**********************End Search bar*******************************/
+
+
+/**********************Head Img*******************************/
+
+
+/*.divimg{
+    height: 300px;
+    width: 100%;
+}*/
+
+.header-img {
+    width: 100%;
+    height: 600px;
+    /* background-image: url('../image/doctor-background.jpg'); */
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url('../image/doctor-wallpaper-hd.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 70%, 50% 90%, 0 70%, 0 0);
+    position: relative;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+    border: 1px solid #28328c;
+    border-radius: 100px;
+    margin: 12px;
+    padding: 12px 40px;
+    color: #28328c;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header-buttons a:hover {
+    background: #28328c;
+    color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+}
+
+
+/**********************End Head Img*******************************/
+
+
+/*************************************Slider************************************/
+
+.news-grid {
+    width: auto;
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    /*box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.16);*/
+    margin: 10px;
+}
+
+.news-grid-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.news-grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.news-grid-txt {
+    padding: 25px;
+}
+
+.news-grid-txt h2 {
+    color: #111;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 10px 0px 5px 0px;
+}
+
+.news-grid-txt a {
+    color: #fff;
+    background: #26ccca;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-decoration-line: none;
+    transition: .5s;
+}
+
+
+/*Hover-Section*/
+
+.news-grid:hover .news-grid-box {
+    left: 15px;
+    transition: .5s;
+}
+
+.news-grid:hover .news-grid-image img {
+    filter: grayscale(1);
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.news-grid:hover .news-grid-txt a {
+    text-decoration-line: none;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+
+/*OWL*/
+
+.owl-controls .owl-buttons {
+    position: relative;
+}
+
+.owl-controls .owl-prev {
+    position: absolute;
+    left: -40px;
+    bottom: 230px;
+    padding: 8px 17px;
+    background: #636e72;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.owl-controls .owl-next {
+    position: absolute;
+    right: -40px;
+    bottom: 230px;
+    padding: 8px 17px;
+    background: #636e72;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.owl-controls .owl-prev:after,
+.owl-controls .owl-next:after {
+    content: '\f104';
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 16px;
+}
+
+.owl-controls .owl-next:after {
+    content: '\f105';
+}
+
+.owl-controls .owl-prev:hover,
+.owl-controls .owl-next:hover {
+    background: #000;
+}
+
+
+/**********************************End Slider***********************************/
+
+
+/**********************About Us*******************************/
+
+.about-div {
+    background-color: #f8f9fa;
+}
+
+
+/**********************End About Us*******************************/
+
+
+/**************************************Review***********************************/
+
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel-inner {
+    height: 300px;
+}
+
+.carousel-caption {
+    color: black;
+    top: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    height: 200px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 5px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    background-color: #7f8c8d;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+    width: 10px;
+    height: 5px;
+    margin: 10px;
+    background-color: black;
+}
+
+
+/***********************************End Review***********************************/
+
+
+/**************************************Contact us********************************/
+
+.contact {
+    background-color: #f8f9fa;
+    height: auto;
+}
+
+.con-sub {
+    background-color: #28328c;
+    color: white;
+}
+
+
+/************************************End Contact us******************************/
+
+
+/**************************************Footer************************************/
+
+.footer {
+    background-color: #15558d;
+}
+
+
+/*************************************End Footer**********************************/
+
+
+/*******************************************************************************************************************/
+
+
+/*************************************Login page**********************************/
+
+.bgimg {
+    background-image: url('../image/doctor-background.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.signbtn {
+    background-color: #28328c;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.signbtn:hover {
+    color: white;
+}
+
+.regis {
+    color: #28328c;
+}
+
+.regis:hover {
+    color: green;
+}
+
+
+/**********************************End Login page**********************************/
